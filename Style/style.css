@@ -9,7 +9,6 @@ Para as widths:
     margin: 0px;
     padding: 0px;
     font-family: 'Outfit', sans-serif;
-    font-size: 15px;
     color: var(--white);
  }
 
@@ -22,26 +21,77 @@ Para as widths:
     --orange: hsl(25, 97%, 53%);
  }
 
-body {
+ body {
     background-color: var(--veryDarkBlue);
     height: 100vh;
     justify-content: center;
     align-items: center;
     display: flex;
-}
+    font-size: 15px;
+ }
 
  main {
     background-color: var(--darkBlue);
-    max-width: 14em;
-    padding: 14px;
-    height: 40vh;
+    max-width: 20em;
+    padding: 1.4em;
+    height: 50vh;
     border-radius: 10px;
  }
 
+ img {
+    background-color: hsla(217, 12%, 63%, 0.158);
+    border-radius: 50%;
+    padding: 0.5em;
+    width: 1.5em;
+    height: 1.5em;
+ }
+
+ .text {
+    padding: 0.6em 0em;
+ }
+
+ .text h1 {
+    padding-bottom: 1em;
+    font-weight: 700;
+ }
+
+ .text p {
+    padding-bottom: 1em;
+    color: var(--lightGrey);
+ }
+
+ .options {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    width: 100%;
+    column-gap: 0.6em;
+ }
+
  button[type="button"] {
-    background-color: var(--mediumGrey);
+    background-color: hsla(217, 12%, 63%, 0.158);
+    border: none;
+    font-weight: 700;
+    border-radius: 50%;
+    padding: 0.5em 1em;
+    margin: 0em 0.5em;
+    width: 3em;
+    height: 3em;
+    align-items: center;
+    justify-content: center;
+    color: var(--lightGrey)
  }
 
  button[type="submit"] {
+    border: none;
+    height: 7vh;
     background-color: var(--orange);
+    margin-top: 2em;
+    grid-column: 1 / span 5;
+    border-top-left-radius:28px;
+    border-top-right-radius:28px;
+    border-bottom-left-radius:28px;
+    border-bottom-right-radius:28px;
+    font-weight: 700;
  }
