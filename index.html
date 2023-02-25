@@ -7,25 +7,41 @@
     <link rel="stylesheet" href="Style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
     <title>Interactive Rating | FrontEnd Mentor Challenge</title>
 </head>
 <body>
     <main>
-        <img id="star" src="Images/icon-star.svg" alt="icon of a gold star">
-        
-        <section class="text">
-            <h1>How did we do?</h1>
-            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <section class="initial-page" hidden>
+            <div class="star-logo">
+                <img id="star" src="Images/icon-star.svg" alt="icon of a gold star">
+            </div>
+            
+            <section class="text">
+                <h1>How did we do?</h1>
+                <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            </section>
+            <section class="options">
+                <button type="button" name="score1">1</button>
+                <button type="button" name="score2">2</button>
+                <button type="button" name="score3">3</button>
+                <button type="button" name="score4">4</button>
+                <button type="button" name="score5">5</button>
+                <button type="submit" name="submit">SUBMIT</button>
+            </section>
         </section>
 
-        <section class="options">
-            <button type="button" name="score1">1</button>
-            <button type="button" name="score2">2</button>
-            <button type="button" name="score3">3</button>
-            <button type="button" name="score4">4</button>
-            <button type="button" name="score5">5</button>
-            <button type="submit" name="submit">SUBMIT</button>
+        <!-- Thank You Page -->
+
+        <section class="thanks-page">
+            <img src="Images/illustration-thank-you.svg" alt="illustration of a phone with accepted process">
+            <section class="selected">
+                <p>You selected x out of 5</p>
+            </section>
+            <section class="message">
+                <h1>Thank you!</h1>
+                <p>We appreciate you taking the time to give a rating. If you ever need more support, don&apos;t hesitate to get in touch!</p>
+            </section>
         </section>
     </main>
 </body>

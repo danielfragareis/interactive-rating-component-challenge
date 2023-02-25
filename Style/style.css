@@ -6,92 +6,152 @@ Para as widths:
  */
 
  * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Outfit', sans-serif;
-    color: var(--white);
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Overpass', sans-serif;
+   color: var(--white);
  }
 
  :root {
-    --white: hsl(0, 0%, 100%);
-    --lightGrey: hsl(217, 12%, 63%);
-    --mediumGrey: hsl(216, 12%, 54%);
-    --darkBlue: hsl(213, 19%, 18%);
-    --veryDarkBlue: hsl(216, 12%, 8%);
-    --orange: hsl(25, 97%, 53%);
+   --white: hsl(0, 0%, 100%);
+   --lightGrey: hsl(217, 12%, 63%);
+   --mediumGrey: hsl(216, 12%, 54%);
+   --darkBlue: hsl(213, 19%, 18%);
+   --veryDarkBlue: hsl(216, 12%, 8%);
+   --orange: hsl(25, 97%, 53%);
  }
 
  body {
-    background-color: var(--veryDarkBlue);
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 15px;
+   background-color: var(--veryDarkBlue);
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   font-size: 15px;
  }
 
  main {
-    background-color: var(--darkBlue);
-    max-width: 20em;
-    padding: 1.4em;
-    height: 50vh;
-    border-radius: 10px;
+   background-color: var(--darkBlue);
+   width: 80vw;
+   min-width: 20em;
+   max-width: 25em;
+   padding: 1.4em;
+   height: 20em;
+   border-radius: 10px;
  }
 
- img {
-    background-color: hsla(217, 12%, 63%, 0.158);
-    border-radius: 50%;
-    padding: 0.5em;
-    width: 1.5em;
-    height: 1.5em;
+ .star-logo {
+   background-color: hsla(217, 12%, 63%, 0.158);
+   border-radius: 50%;
+   padding: 0.5em;
+   width: 1.5em;
+   height: 1.5em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
  }
+
+ .star-logo img {
+   width: 65%;
+   height: 65%;
+ }
+
+
 
  .text {
-    padding: 0.6em 0em;
+   padding: 0.6em 0em;
  }
 
  .text h1 {
-    padding-bottom: 1em;
-    font-weight: 700;
+   padding: 0.5em 0em;
+   font-weight: 700;
  }
 
  .text p {
-    padding-bottom: 1em;
-    color: var(--lightGrey);
+   padding-bottom: 1em;
+   color: var(--lightGrey);
  }
 
  .options {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    align-items: center;
-    width: 100%;
-    column-gap: 0.6em;
+   justify-content: center;
+   display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   align-items: center;
+   width: 100%;
+   column-gap: 0.6em;
  }
 
  button[type="button"] {
-    background-color: hsla(217, 12%, 63%, 0.158);
-    border: none;
-    font-weight: 700;
-    border-radius: 50%;
-    padding: 0.5em 1em;
-    margin: 0em 0.5em;
-    width: 3em;
-    height: 3em;
-    align-items: center;
-    justify-content: center;
-    color: var(--lightGrey)
+   background-color: hsla(217, 12%, 63%, 0.158);
+   border: none;
+   font-weight: 700;
+   border-radius: 50%;
+   padding: 0.5em 1em;
+   margin: 0em 0.5em;
+   width: 3em;
+   height: 3em;
+   align-items: center;
+   justify-content: center;
+   color: var(--lightGrey)
  }
 
  button[type="submit"] {
-    border: none;
-    height: 7vh;
-    background-color: var(--orange);
-    margin-top: 2em;
-    grid-column: 1 / span 5;
-    border-top-left-radius:28px;
-    border-top-right-radius:28px;
-    border-bottom-left-radius:28px;
-    border-bottom-right-radius:28px;
-    font-weight: 700;
+   border: none;
+   height: 3em;
+   background-color: var(--orange);
+   margin-top: 2em;
+   grid-column: 1 / span 5;
+   border-top-left-radius:28px;
+   border-top-right-radius:28px;
+   border-bottom-left-radius:28px;
+   border-bottom-right-radius:28px;
+   font-weight: 700;
+   letter-spacing: 0.18em;
+ }
+
+ /* Section class: thanks-page */
+
+ .thanks-page {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+ }
+
+ img {
+   width: 9em;
+   height: 6em;
+ }
+
+
+ .thanks-page {
+   margin: 1em;
+ }
+
+ .selected {
+   background-color: hsla(217, 12%, 63%, 0.158);
+   border-top-left-radius:28px;
+   border-top-right-radius:28px;
+   border-bottom-left-radius:28px;
+   border-bottom-right-radius:28px;
+   margin: 1.5em;
+   padding: 0.5em 1em;
+ }
+
+ .selected p {
+   color: var(--orange);
+ }
+
+ .message h1 {
+   font-size: 1.7em;
+ }
+
+ .message p {
+   color: var(--lightGrey);
+   margin: 0em 0.2em;
+   padding: 1em 0.2em;
+   min-width: 20em;
+   max-width: 22.5em;
+   width: 74vw;
  }
