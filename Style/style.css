@@ -34,10 +34,14 @@ Para as widths:
    background-color: var(--darkBlue);
    width: 80vw;
    min-width: 20em;
-   max-width: 25em;
+   max-width: 22em;
    padding: 1.4em;
    height: 20em;
    border-radius: 10px;
+ }
+
+ .initial-page {
+   max-width: 330px;
  }
 
  .star-logo {
@@ -60,16 +64,21 @@ Para as widths:
 
  .text {
    padding: 0.6em 0em;
+   max-width: 330px;
+   align-items: center;
+   /* margin: 0em 1em; */
  }
 
  .text h1 {
    padding: 0.5em 0em;
    font-weight: 700;
+   font-size: 1.5em;
  }
 
  .text p {
    padding-bottom: 1em;
    color: var(--lightGrey);
+   line-height: 1.4em;
  }
 
  .options {
@@ -87,19 +96,26 @@ Para as widths:
    font-weight: 700;
    border-radius: 50%;
    padding: 0.5em 1em;
-   margin: 0em 0.5em;
+   margin: 0em 0.6em;
    width: 3em;
    height: 3em;
    align-items: center;
    justify-content: center;
-   color: var(--lightGrey)
+   color: var(--lightGrey);
+   transition: background-color 0.5s, color 0.5s;
+ }
+
+ button[type="button"]:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  cursor: pointer;
  }
 
  button[type="submit"] {
    border: none;
    height: 3em;
    background-color: var(--orange);
-   margin-top: 2em;
+   margin: 2em 0.6em;
    grid-column: 1 / span 5;
    border-top-left-radius:28px;
    border-top-right-radius:28px;
@@ -107,26 +123,30 @@ Para as widths:
    border-bottom-right-radius:28px;
    font-weight: 700;
    letter-spacing: 0.18em;
+   transition: background-color 0.5s, color 0.5s;
+ }
+
+ button[type="submit"]:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  cursor: pointer;
  }
 
  /* Section class: thanks-page */
 
  .thanks-page {
    display: flex;
+   display: none;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    text-align: center;
+   margin: 1em;
  }
 
  img {
    width: 9em;
    height: 6em;
- }
-
-
- .thanks-page {
-   margin: 1em;
  }
 
  .selected {
