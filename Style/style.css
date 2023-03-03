@@ -41,6 +41,7 @@ Para as widths:
  }
 
  .initial-page {
+  display: block;
    max-width: 330px;
  }
 
@@ -69,7 +70,7 @@ Para as widths:
    /* margin: 0em 1em; */
  }
 
- .text h1 {
+ .text h1, h2 {
    padding: 0.5em 0em;
    font-weight: 700;
    font-size: 1.5em;
@@ -111,8 +112,14 @@ Para as widths:
   cursor: pointer;
  }
 
+ button[type="button"]:focus {
+  background-color: var(--lightGrey);
+  color: var(--white);
+ }
+
  button[type="submit"] {
    border: none;
+   width: 95%;
    height: 3em;
    background-color: var(--orange);
    margin: 2em 0.6em;
@@ -135,7 +142,6 @@ Para as widths:
  /* Section class: thanks-page */
 
  .thanks-page {
-   display: flex;
    display: none;
    flex-direction: column;
    align-items: center;
@@ -155,22 +161,22 @@ Para as widths:
    border-top-right-radius:28px;
    border-bottom-left-radius:28px;
    border-bottom-right-radius:28px;
-   margin: 1.5em;
+   margin: 1.5em 1.5em 0.5em;
    padding: 0.5em 1em;
  }
 
- .selected p {
+ .selected  p, #number{
    color: var(--orange);
  }
 
- .message h1 {
+ .message h2 {
    font-size: 1.7em;
  }
 
  .message p {
    color: var(--lightGrey);
    margin: 0em 0.2em;
-   padding: 1em 0.2em;
+   padding: 0em 0.2em;
    min-width: 20em;
    max-width: 22.5em;
    width: 74vw;
